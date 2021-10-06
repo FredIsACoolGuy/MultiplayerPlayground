@@ -18,7 +18,7 @@ namespace HelloWorld
                 GUIStyle myStyle = new GUIStyle();
                 myStyle.active.background = (Texture2D)btnTexture;
                 
-                if (GUI.Button(new Rect(200, 10, 500, 500), btnTexture, myStyle)) Debug.Log("ButtonPressed");
+                //if (GUI.Button(new Rect(200, 10, 500, 500), btnTexture, myStyle)) Debug.Log("ButtonPressed");
 
                 StatusLabels();
 
