@@ -20,7 +20,7 @@ namespace HelloWorld
 
         public override void NetworkStart()
         {
-            ChangeSkin();
+           // ChangeSkin();
         }
 
         public void ChangeSkin()

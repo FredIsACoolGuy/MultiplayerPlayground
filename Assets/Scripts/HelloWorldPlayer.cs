@@ -22,7 +22,7 @@ namespace HelloWorld
         {
             if (NetworkManager.Singleton.IsServer)
             {
-                var randomPosition = GetRandomPositionOnPlane();
+                var randomPosition = GetRandomPositionOnPlane(1);
                 transform.position = randomPosition;
                 Position.Value = randomPosition;
             }
@@ -35,12 +35,12 @@ namespace HelloWorld
         [ServerRpc]
         void SubmitPositionRequestServerRpc(ServerRpcParams rpcParams = default)
         {
-            Position.Value = GetRandomPositionOnPlane();
+            Position.Value = GetRandomPositionOnPlane(NetworkManager.Singleton.ConnectedClients.Count);
         }
 
-        static Vector3 GetRandomPositionOnPlane()
+        static Vector3 GetRandomPositionOnPlane(int playerNum)
         {
-            return new Vector3(Random.Range(-3f, 3f), 1f, Random.Range(-3f, 3f));
+            return new Vector3((2f * playerNum)-5f, 1f, 0f);
         }
 
         void Update()

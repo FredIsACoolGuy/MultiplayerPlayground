@@ -10,7 +10,7 @@ namespace HelloWorld
 
         public GameObject[] hats;
         
-        private int hatNum=0;
+        private int hatNum=1;
 
         public NetworkVariableInt Hat = new NetworkVariableInt(new NetworkVariableSettings
         {
@@ -20,12 +20,12 @@ namespace HelloWorld
 
         public override void NetworkStart()
         {
-            foreach(GameObject hat in hats)
-            {
-                hat.SetActive(false);
-            }
-            hatNum = Hat.Value;
-            ChangeHat();
+            //foreach(GameObject hat in hats)
+          //  {
+          //      hat.SetActive(false);
+          //  }
+           // hatNum = 1;
+            //ChangeHat();
         }
 
         public void ChangeHat()

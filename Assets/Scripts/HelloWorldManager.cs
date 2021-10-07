@@ -6,6 +6,7 @@ namespace HelloWorld
     public class HelloWorldManager : MonoBehaviour
     {
         public Texture btnTexture;
+
         void OnGUI()
         {
             GUILayout.BeginArea(new Rect(10, 10, 300, 300));

@@ -895,8 +895,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hats:
-  - {fileID: 7578433877300781588}
   - {fileID: 6557444230838823552}
+  - {fileID: 7578433877300781588}
   - {fileID: 5904730243115764504}
   - {fileID: 3017349180729679708}
   - {fileID: 3463411798893884291}
